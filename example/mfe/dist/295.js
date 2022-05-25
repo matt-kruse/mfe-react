@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_mfe_react_mfe=self.webpackChunk_mfe_react_mfe||[]).push([[295],{295:(e,t,a)=>{a.r(t),a.d(t,{default:()=>l});var c=a(876),f=a.n(c);const l=()=>f().createElement("div",null,"DELAYED COMPONENT LOADED")}}]);

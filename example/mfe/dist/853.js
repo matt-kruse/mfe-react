@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_mfe_react_mfe=self.webpackChunk_mfe_react_mfe||[]).push([[853],{853:(e,t,a)=>{a.r(t),a.d(t,{default:()=>r});var c=a(876),n=a.n(c);const r=e=>n().createElement("div",null,"React Version: ",n().version)}}]);

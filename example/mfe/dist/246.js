@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_mfe_react_mfe=self.webpackChunk_mfe_react_mfe||[]).push([[246],{246:(e,t,c)=>{c.r(t),c.d(t,{default:()=>a});var n=c(876),l=c.n(n);const a=e=>l().createElement("div",null,l().createElement("button",{onClick:e.onclick},e.msg||"Default Button"))}}]);

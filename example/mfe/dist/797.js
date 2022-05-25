@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_mfe_react_mfe=self.webpackChunk_mfe_react_mfe||[]).push([[797],{797:(e,t,n)=>{n.r(t);var r=n(876),c=n.n(r);const l=()=>c().createElement("div",null,"App");var a=n(442);n.n(a)().render(c().createElement(l,null),document.getElementById("root"))}}]);
