@@ -1,0 +1,32 @@
+{
+  "name": "@mfe-react/mfe",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "7.17.8",
+    "@babel/preset-react": "7.16.7",
+    "babel-preset-solid": "^1.4.0",
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-loader": "8.2.4",
+    "html-webpack-plugin": "5.5.0",
+    "file-loader": "^6.2.0",
+    "vue-loader": "^17.0.0",
+    "webpack": "5.70.0",
+    "webpack-cli": "4.9.2",
+    "webpack-dev-server": "4.7.4"
+  },
+  "scripts": {
+    "start": "webpack-cli serve",
+    "build": "webpack --mode production",
+    "builddev": "webpack --mode development",
+    "serve": "serve dist -p 3002",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "solid-js": "^1.4.1",
+    "vue": "^3.2.33"
+  }
+}
