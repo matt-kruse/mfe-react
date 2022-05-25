@@ -60,7 +60,7 @@ module.exports = (env,argv) => {
       new ModuleFederationPlugin({
         name: 'HostApp',
         remotes: {
-          ComponentLibrary: `ComponentLibrary@//${remotes.ComponentLibrary}`,
+          ComponentLibrary: `ComponentLibrary@${remotes.ComponentLibrary}`,
         },
         shared: {
           react: {
