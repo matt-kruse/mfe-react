@@ -12,7 +12,11 @@
     "micro",
     "frontend"
   ],
-  "author": "Matt Kruse <matt@mattkruse.com>",
+  "author": "Matt Kruse <github@mattkruse.com> (http://mattkruse.com/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matt-kruse/mfe-react.git"
+  },
   "license": "ISC",
   "dependencies": {
     "react": "^17.0.0",
