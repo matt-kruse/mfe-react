@@ -6,7 +6,7 @@ let defaultConfig = {
   shadowDOM: false,
   errorHandler: null,
   fallback: null,
-  log: true
+  log: false
 };
 
 // Test if a loaded module is a React component (the other option is a Parcel).

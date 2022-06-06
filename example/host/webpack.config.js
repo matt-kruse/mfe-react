@@ -15,7 +15,7 @@ module.exports = (env,argv) => {
       }
       :
       {
-        "ComponentLibrary":"localhost:3002/remoteEntry.js",
+        "ComponentLibrary":"//localhost:3002/remoteEntry.js",
       }
   ;
 
