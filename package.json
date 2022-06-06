@@ -1,6 +1,6 @@
 {
   "name": "mfe-react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React Micro-Frontend Component Wrapper",
   "main": "index.js",
   "scripts": {

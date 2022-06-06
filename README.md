@@ -6,6 +6,12 @@ This module simplifies the lazy import of remote Micro-Frontends into a React ap
 
 It supports loading React Components directly or single-spa "Parcel" style plain javascript components with mount(), bootstrap(), unmount(), and update() methods.
 
+### Demo
+
+https://matt-kruse.github.io/mfe-react/example/host/dist/
+
+You can also install the demo in the `example` directory of this repo.
+
 ### Example
 
 Regardless of the component implementation, the result is a React Component that can be used on the page as-is and passed props. This example uses Module Federation to load the remote component.
