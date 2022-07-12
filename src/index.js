@@ -13,7 +13,7 @@ let defaultConfig = {
 // This will not work if the external module is any other type of plain
 // function, but you shouldn't use this wrapper in those cases.
 const isModuleReactComponent = module=>{
-  return module && module.default && typeof module.default==="function" && !module.default.mount;
+  return module && module.default && !module.default.mount;
 };
 
 // This Wrapper may wrap a React Component or a plain javascript component.

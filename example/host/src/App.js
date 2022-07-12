@@ -1,5 +1,5 @@
 import React from 'react';
-import {MFEComponent} from '../../../index.js';
+import {MFEComponent} from '../../../src';
 
 const delay = (timeout)=>{
   return (o)=> {

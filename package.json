@@ -1,10 +1,13 @@
 {
   "name": "mfe-react",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "React Micro-Frontend Component Wrapper",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "babel src --out-dir lib"
+  },
+  "publishConfig": {
+    "registry":"https://registry.npmjs.org"
   },
   "keywords": [
     "react",
@@ -18,8 +21,15 @@
     "url": "https://github.com/matt-kruse/mfe-react.git"
   },
   "license": "ISC",
-  "dependencies": {
+  "peerDependencies": {
     "react": "^17.0.0",
     "react-shadow-root": "^6.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.18.0",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12"
   }
 }

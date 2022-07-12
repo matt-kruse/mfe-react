@@ -16,6 +16,7 @@
     "lerna": "3.22.1"
   },
   "dependencies": {
-    "@babel/plugin-syntax-jsx": "^7.17.12"
+    "@babel/plugin-syntax-jsx": "^7.17.12",
+    "react-dom": "^18.2.0"
   }
 }
