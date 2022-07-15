@@ -194,8 +194,11 @@ export const MFEComponent = function (importPromise,config,id) {
   Component = React.lazy(()=>modulePromise);
 
   // This is the actual Component that the wrapper returns.
-  return (props) => {
+  return React.forwardRef((props,ref) => {
     log("Rendering Component");
+
+    // Check to see if we actually got a ref and need to pass it on
+    let refProps = ref ? {...props,ref} : {...props};
 
     // Attach a shadow dom root?
     if (config.shadowDOM) {
@@ -203,7 +206,7 @@ export const MFEComponent = function (importPromise,config,id) {
         <BoundaryErrorWrapper {...props}>
           <ReactShadowRoot>
             <React.Suspense fallback={config.fallback || ''}>
-              <Component {...props}/>
+              <Component {...refProps}/>
             </React.Suspense>
           </ReactShadowRoot>
         </BoundaryErrorWrapper>
@@ -213,11 +216,11 @@ export const MFEComponent = function (importPromise,config,id) {
     return (
       <BoundaryErrorWrapper {...props}>
         <React.Suspense fallback={config.fallback || ''}>
-          <Component {...props}/>
+          <Component {...refProps}/>
         </React.Suspense>
       </BoundaryErrorWrapper>
     );
-  };
+  });
 };
 
 export default MFEComponent;

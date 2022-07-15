@@ -1,13 +1,13 @@
 {
   "name": "mfe-react",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "React Micro-Frontend Component Wrapper",
   "main": "lib/index.js",
   "scripts": {
     "prepublish": "babel src --out-dir lib"
   },
   "publishConfig": {
-    "registry":"https://registry.npmjs.org"
+    "registry": "https://registry.npmjs.org"
   },
   "keywords": [
     "react",

@@ -74,6 +74,7 @@ module.exports = {
         './DestructiveStyleComponent': './src/DestructiveStyleComponent',
         './ReactVersionComponent': './src/ReactVersionComponent',
         './SolidComponent': './src/SolidComponent.solid.jsx',
+        './ForwardRefComponent': './src/ForwardRefComponent',
       },
       shared: {
         react: {

@@ -45,12 +45,21 @@ const DestructiveStyleComponent = MFEComponent(import('ComponentLibrary/Destruct
 const ShadowStyleComponent = MFEComponent(import('ComponentLibrary/ShadowStyleComponent'),{shadowDOM:true}, 'ShadowStyleComponent');
 const ReactVersionComponent = MFEComponent(import('ComponentLibrary/ReactVersionComponent'),null,'ReactVersionComponent');
 const SolidComponent = MFEComponent(import('ComponentLibrary/SolidComponent'),null,'SolidComponent');
+const ForwardRefComponent = MFEComponent(import('ComponentLibrary/ForwardRefComponent'),null,'ForwardRefComponent');
 
 const App = () => {
   const [count,setCount] = React.useState(0);
   const inc = ()=>{
       setCount(count+1);
   };
+
+  // Create a ref for forwardRef components
+  let [refString,setRefString] = React.useState("pending...");
+  let ref = domElement=> {
+    if (domElement) {
+      setRefString(domElement.outerHTML);
+    }
+  }
 
   return (
     <div>
@@ -101,6 +110,12 @@ const App = () => {
 
       <MFECard title={"Guard against style bleed-out using ShadowDOM."}>
         <ShadowStyleComponent count={count}/>
+      </MFECard>
+
+      <MFECard title={"A forwardRef component"}>
+        <ForwardRefComponent ref={ref}/>
+        <p>The outer HTML of the button which was returned to ref is:</p>
+        <div>{refString}</div>
       </MFECard>
     </div>
   );
