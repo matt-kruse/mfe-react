@@ -1,6 +1,6 @@
 {
   "name": "mfe-react",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "React Micro-Frontend Component Wrapper",
   "main": "lib/index.js",
   "scripts": {
@@ -21,9 +21,12 @@
     "url": "https://github.com/matt-kruse/mfe-react.git"
   },
   "license": "ISC",
+  "dependencies": {
+    "react-shadow-root": "*"
+  },
   "peerDependencies": {
-    "react": "^17.0.0",
-    "react-shadow-root": "^6.2.0"
+    "react": "*",
+    "react-shadow-root": "*"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.10",
